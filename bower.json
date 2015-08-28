@@ -1,0 +1,22 @@
+{
+  "name": "contact-status",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ksivam/contact-status",
+  "authors": [
+    "krishna sadaivam <chander.krishna@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.3.0",
+    "q": "1.0.1",
+    "requirejs": "~2.1.20"
+  }
+}
