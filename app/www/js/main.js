@@ -23,5 +23,6 @@ require.config({
     }
 });
 
-require(['client'], function(client){
+require(['jQuery', 'Q', 'ko', 'userVM'], function($, Q, ko, userVM){
+    ko.applyBindings(new userVM(), $('#user')[0]);
 });
