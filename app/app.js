@@ -10,11 +10,11 @@ var contacts = {
     rover: 'Offline'
 };
 
-app.use('/public', express.static('public'));
-app.use('/lib', express.static('bower_components'));
+app.use(express.static('www'));
+app.use('/lib', express.static('/www/lib'));
 
 app.get('/', function(req, rsp){
-    rsp.sendFile(__dirname + '/index.html');
+    rsp.sendFile(__dirname + '/www/index.html');
 });
 
 io.use(function(socket, next){
