@@ -11,7 +11,6 @@ var contacts = {
 };
 
 app.use(express.static('www'));
-app.use('/lib', express.static('/www/lib'));
 
 app.get('/', function(req, rsp){
     rsp.sendFile(__dirname + '/www/index.html');

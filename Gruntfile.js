@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                     cwd: 'bower_components',
                     flatten: true, // remove all paths from src dir.
                     src: ['knockout/dist/knockout.js', 'q/q.js', 'requirejs/require.js', 'jquery/dist/jquery.js'],
-                    dest: 'app/www/lib/'
+                    dest: 'app/www/js/extern/'
                 }]
             }
         },

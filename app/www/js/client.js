@@ -1,5 +1,4 @@
-(function(global, $, io){
-
+define(['jQuery', 'Q', 'ko', 'io'], function($, Q, ko, io){
     var socket;
 
     var contactsVM = function(status, name) {
@@ -41,4 +40,4 @@
 
     ko.applyBindings(new userVM(), $('#user')[0]);
 
-})(window, window.$, window.io);
+});
